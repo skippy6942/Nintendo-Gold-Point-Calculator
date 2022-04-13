@@ -2,7 +2,6 @@
 Nintendo Gold Point Calculator
 By skippy_69
 Simple Python Program 
-Website Skeleton Model
 
  /$$   /$$/$$           /$$                            /$$                 /$$$$$$          /$$      /$$       /$$$$$$$         /$$           /$$            /$$$$$$          /$$                  /$$           /$$                      
 | $$$ | $|__/          | $$                           | $$                /$$__  $$        | $$     | $$      | $$__  $$       |__/          | $$           /$$__  $$        | $$                 | $$          | $$                      
@@ -13,8 +12,12 @@ Website Skeleton Model
 | $$ \  $| $| $$  | $$ |  $$$$|  $$$$$$| $$  | $|  $$$$$$|  $$$$$$/      |  $$$$$$|  $$$$$$| $|  $$$$$$$      | $$    |  $$$$$$| $| $$  | $$ |  $$$$/      |  $$$$$$|  $$$$$$| $|  $$$$$$|  $$$$$$| $|  $$$$$$$ |  $$$$|  $$$$$$| $$      
 |__/  \__|__|__/  |__/  \___/  \_______|__/  |__/\_______/\______/        \______/ \______/|__/\_______/      |__/     \______/|__|__/  |__/  \___/         \______/ \_______|__/\_______/\______/|__/\_______/  \___/  \______/|__/      
 """
+# imports
+
 import time
 import webbrowser
+
+# title screen with language selection
 
 print("Nintendo Gold Point Calculator / 任天度ゴルドーポイントのカルキュレーター / Calculatrice Nintendo Goldpoint / Calcolatrice Goldpoint Nintendo\n")
 time.sleep(0.3)
@@ -22,6 +25,8 @@ while(True):
     print("Select Language / 言語を選択する / choisissez la langue / seleziona la lingua\n")
     print("English (UK) - [en-GB]\nEnglish (US) - [en-US]\n日本語 - [jp]\nFrançais - [fr]\nItaliano - [it]")
     lang = input("(Enter Language Code / 言語コードを入力してください / entrez le code de langue / inserite il codice della lingua)\n(or type \"info\" for more information on star points / スターポイントの詳細については、「info」と入力してください / ou entrez \"info\" pour plus d'informations sur les Star Points / oppure inserisci \"info\" per maggiori informazioni sui Star Points\n")
+    
+# when user enters "info" opens browser and navigates to the my nintendo gold point website
 
     if lang == "info":
         print("Directing to browser... / ブラウザに転送しています... / Direction vers le navigateur... / Indirizzamento al browser...")
@@ -42,6 +47,7 @@ while(True):
         
         #en-GB
         while(True):
+         # asks user option
             print("Please select an option")
             time.sleep(0.1)
             print("1: Calculate Currency to Star Point")
@@ -73,6 +79,7 @@ while(True):
                     break
 
             else:
+             # repeats to beginning of while loop
                 print("Please enter a valid selection")
                 continue
 
